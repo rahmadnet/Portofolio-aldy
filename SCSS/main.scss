@@ -112,18 +112,19 @@ body {
     }
 
     @media screen and (max-width: 991px) {
-        #navbarNav {
+        .bg{
             background-color: $textColor;
-            .navbar-nav {
-                margin-bottom: 4em;
-                .nav-item {
-                    margin-left: 6em;
-                    .nav-link {
-                        color: $secondaryColor;
-                    }
-
-                    .sign-up-btn {
-                        @include tombol-signup()
+            #navbarNav {
+                .navbar-nav {
+                    margin-bottom: 3em;
+                    .nav-item {
+                        margin-left: 6em;
+                        .nav-link {
+                            color: $secondaryColor;
+                        }
+                        .sign-up-btn {
+                            @include tombol-signup()
+                        }
                     }
                 }
             }

@@ -57,6 +57,7 @@ body {
 
 // navbar
 .custom-nav {
+    background-color: $textColor;
     .navbar-brand {
 
         color: $primaryColor;
@@ -113,7 +114,6 @@ body {
 
     @media screen and (max-width: 991px) {
         #navbarNav {
-            background-color: $textColor;
             .navbar-nav {
                 .nav-item {
                     margin-left: 6em;

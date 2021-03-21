@@ -7,6 +7,10 @@ body {
   background-size: 50vmax;
 }
 
+.custom-nav {
+  background-color: #6578C4;
+}
+
 .custom-nav .navbar-brand {
   color: #EB9639;
   font-weight: 900;
@@ -68,9 +72,6 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .custom-nav #navbarNav {
-    background-color: #6578C4;
-  }
   .custom-nav #navbarNav .navbar-nav .nav-item {
     margin-left: 6em;
   }

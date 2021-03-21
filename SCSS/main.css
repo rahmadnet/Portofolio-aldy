@@ -68,6 +68,9 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .custom-nav .bg {
+    background-color: #6578C4;
+  }
   .custom-nav #navbarNav .navbar-nav .nav-item {
     margin-left: 6em;
   }

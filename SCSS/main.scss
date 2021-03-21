@@ -57,7 +57,6 @@ body {
 
 // navbar
 .custom-nav {
-    background-color: $textColor;
     .navbar-brand {
 
         color: $primaryColor;
@@ -113,17 +112,20 @@ body {
     }
 
     @media screen and (max-width: 991px) {
-        #navbarNav {
-            .navbar-nav {
-                .nav-item {
-                    margin-left: 6em;
-
-                    .nav-link {
-                        color: $secondaryColor;
-                    }
-
-                    .sign-up-btn {
-                        @include tombol-signup()
+        .custom-nav{
+            background-color: $textColor;
+            #navbarNav {
+                .navbar-nav {
+                    .nav-item {
+                        margin-left: 6em;
+                        
+                        .nav-link {
+                            color: $secondaryColor;
+                        }
+                        
+                        .sign-up-btn {
+                            @include tombol-signup()
+                        }
                     }
                 }
             }

@@ -7,10 +7,6 @@ body {
   background-size: 50vmax;
 }
 
-.custom-nav {
-  background-color: #6578C4;
-}
-
 .custom-nav .navbar-brand {
   color: #EB9639;
   font-weight: 900;
@@ -72,13 +68,16 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .custom-nav #navbarNav .navbar-nav .nav-item {
+  .custom-nav .custom-nav {
+    background-color: #6578C4;
+  }
+  .custom-nav .custom-nav #navbarNav .navbar-nav .nav-item {
     margin-left: 6em;
   }
-  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  .custom-nav .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
     color: #2C2A55;
   }
-  .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn {
+  .custom-nav .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn {
     display: inline-block;
     color: #ffffff;
     background-color: #2C2A55;
@@ -88,7 +87,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
   }
-  .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn:hover {
+  .custom-nav .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn:hover {
     color: #2C2A55;
     border: 1px solid #2C2A55;
     background-color: transparent;

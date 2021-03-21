@@ -114,12 +114,12 @@ body {
     @media screen and (max-width: 991px) {
         #navbarNav {
             .navbar-nav {
+                background-color: $textColor;
                 .nav-item {
                     margin-left: 6em;
 
                     .nav-link {
                         color: $secondaryColor;
-                        background-color: #6578C4;
                     }
 
                     .sign-up-btn {

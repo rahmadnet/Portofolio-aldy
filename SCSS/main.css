@@ -68,12 +68,14 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .custom-nav #navbarNav .navbar-nav {
+    background-color: #6578C4;
+  }
   .custom-nav #navbarNav .navbar-nav .nav-item {
     margin-left: 6em;
   }
   .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
     color: #2C2A55;
-    background-color: #6578C4;
   }
   .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn {
     display: inline-block;

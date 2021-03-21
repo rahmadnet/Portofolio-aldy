@@ -114,6 +114,7 @@ body {
     @media screen and (max-width: 991px) {
         #navbarNav {
             background-color: $textColor;
+            margin-bottom: 2em;
             .navbar-nav {
                 .nav-item {
                     margin-left: 6em;

@@ -78,7 +78,7 @@ body {
                     text-transform: uppercase;
                     margin-left: 0.5em;
                     margin-right: 0em;
-                    margin-top: 0em;
+                    margin-top: 1em;
                     transition: all 0.3s ease;
                     font-size: 100;
 
@@ -112,21 +112,25 @@ body {
     }
 
     @media screen and (max-width: 991px) {
-        .custom-nav{
+        .bg{
+
             background-color: $textColor;
             #navbarNav {
+                background-color: $textColor;
                 .navbar-nav {
-                    margin-bottom: 3em;
+                    margin-bottom: 4em;
                     .nav-item {
                         margin-left: 6em;
                         .nav-link {
                             color: $secondaryColor;
                         }
+                        
                         .sign-up-btn {
                             @include tombol-signup()
                         }
                     }
                 }
+                
             }
         }
     }

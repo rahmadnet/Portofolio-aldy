@@ -115,10 +115,9 @@ body {
         #navbarNav {
             background-color: $textColor;
             .navbar-nav {
-                margin-top: 2em;
+                margin-bottom: 2em;
                 .nav-item {
                     margin-left: 6em;
-                    margin-bottom: 1em;
                     .nav-link {
                         color: $secondaryColor;
                     }

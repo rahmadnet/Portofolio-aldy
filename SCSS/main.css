@@ -76,6 +76,7 @@ body {
   }
   .custom-nav #navbarNav .navbar-nav .nav-item {
     margin-left: 6em;
+    margin-top: 1em;
   }
   .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
     color: #2C2A55;

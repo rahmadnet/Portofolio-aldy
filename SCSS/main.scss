@@ -1,0 +1,151 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&family=Ubuntu:wght@700&display=swap');
+
+//Variable
+$primaryColor: #EB9639;
+$secondaryColor: #2C2A55;
+$whiteColor : #ffffff;
+$greyColor: #C5C7E9;
+$orange : #E0AD30;
+$textColor: #6578C4;
+
+//mixin
+@mixin tombol {
+    display: inline-block;
+    color: $whiteColor;
+    background-color: $primaryColor;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+
+    &:hover{
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        background-color: transparent;
+        transition: all 0.3s ease;
+    }
+}
+
+@mixin tombol-signup {
+    display: inline-block;
+    color: $whiteColor;
+    background-color: $secondaryColor;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    &:hover{
+        color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        background-color: transparent;
+        transition: all 0.3s ease;
+    }
+}
+
+//styles
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50vmax;
+}
+
+// navbar
+.custom-nav {
+    .navbar-brand {
+
+        color: $primaryColor;
+        font-weight: 900;
+        font-size: 2rem;
+        margin-top: 1em;
+
+        &:hover {
+            color: darken($secondaryColor, 30%)
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $whiteColor;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin-left: 0.5em;
+                    margin-right: 0em;
+                    margin-top: 1em;
+                    transition: all 0.3s ease;
+                    font-size: 100;
+
+                    &:hover {
+                        color: darken($secondaryColor, 100%)
+                    }
+                }
+                .sign-up-btn:hover{
+                    color: lighten($primaryColor, 30%);
+                }
+
+                .sign-up-btn {
+                    @include tombol-signup()
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .navbar-brand {
+            color: $whiteColor;
+            margin-left: 2em;
+        }
+
+        .custom-section {
+            h2 {
+                color: $whiteColor;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        #navbarNav {
+            .navbar-nav {
+                .nav-item {
+                    margin-left: 6em;
+
+                    .nav-link {
+                        color: $secondaryColor;
+                    }
+
+                    .sign-up-btn {
+                        @include tombol-signup()
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-section {
+    margin-top: 15em;
+
+    h1 {
+        font-size: 700;
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1;
+    }
+
+    p {
+        color: $textColor;
+        font-size: 100;
+        margin-top: 3em;
+    }
+
+    a {
+        @include tombol()
+    }
+}

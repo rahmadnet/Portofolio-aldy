@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&family=Ubuntu:wght@700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50vmax;
+}
+
+.custom-nav .navbar-brand {
+  color: #EB9639;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: 1em;
+}
+
+.custom-nav .navbar-brand:hover {
+  color: black;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 0.5em;
+  margin-right: 0em;
+  margin-top: 1em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 100;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn:hover {
+  color: #f9e0c4;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #2C2A55;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn:hover {
+  color: #2C2A55;
+  border: 1px solid #2C2A55;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 420px) {
+  .custom-nav .navbar-brand {
+    color: #ffffff;
+    margin-left: 2em;
+  }
+  .custom-nav .custom-section h2 {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item {
+    margin-left: 6em;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    color: #2C2A55;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #2C2A55;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-btn:hover {
+    color: #2C2A55;
+    border: 1px solid #2C2A55;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+.custom-section {
+  margin-top: 15em;
+}
+
+.custom-section h1 {
+  font-size: 700;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1;
+}
+
+.custom-section p {
+  color: #6578C4;
+  font-size: 100;
+  margin-top: 3em;
+}
+
+.custom-section a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #EB9639;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+.custom-section a:hover {
+  color: #EB9639;
+  border: 1px solid #EB9639;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/*# sourceMappingURL=main.css.map */

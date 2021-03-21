@@ -23,6 +23,8 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   margin-left: 0.5em;
+  margin-right: 0em;
+  margin-top: 0em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 100;
